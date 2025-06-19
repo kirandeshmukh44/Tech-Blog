@@ -1,15 +1,19 @@
-<html>
-    <head>
-        <title>Tech Blog</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-            crossorigin="anonymous">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tech Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous">
+</head>
+<body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<!-- 🔹 Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
     <img src="assets/logo.jpg" alt="logo" class="navbar-brand" style="width: 60px; height: 60px; border-radius: 50%;">
     <a class="navbar-brand" href="#">My Tech Blog</a>
@@ -19,39 +23,58 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
-        <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
             Languages
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="c.html">C</a></li>
-            <li><a class="dropdown-item" href="c++.html">C++</a></li>
-            <li><a class="dropdown-item" href="java.html">Java</a></li>
-            <li><a class="dropdown-item" href="html.html">HTML</a></li>
-            <li><a class="dropdown-item" href="css.html">CSS</a></li>
-            <li><a class="dropdown-item" href="js.html">JavaScript</a></li>
-            <li><a class="dropdown-item" href="python.html">Python</a></li>
+            <li><a class="dropdown-item" href="#">C</a></li>
+            <li><a class="dropdown-item" href="#">C++</a></li>
+            <li><a class="dropdown-item" href="#">Java</a></li>
+            <li><a class="dropdown-item" href="#">HTML</a></li>
+            <li><a class="dropdown-item" href="#">CSS</a></li>
+            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+            <li><a class="dropdown-item" href="#">Python</a></li>
           </ul>
         </li>
 
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
+<!-- 🔹 Home Section -->
 <section id="home" class="bg-light text-center py-5" style="margin-top: 70px;">
   <div class="container">
     <h1 class="display-4">Welcome to My Tech Blog</h1>
     <p class="lead">Explore tutorials and concepts from basic to advanced.</p>
-    
-    
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+    <a href="#about" class="btn btn-primary mt-3">Know More About This Website</a>
+  </div>
+</section>
+
+<!-- 🔹 About Section (Website Info) -->
+<section id="about" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4">About This Website</h2>
+    <p class="text-center">
+      This website is designed for students and beginners who want to learn programming in an easy and practical way.
+      It covers core concepts of languages like C, C++, Java, and HTML through real-life project examples.
+      Whether you're preparing for your diploma projects or starting your coding journey, this platform provides simple explanations, ready-to-use code snippets, and helpful tutorials to boost your learning.
+    </p>
+  </div>
+</section>
+
+<!-- 🔹 Bootstrap JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C5qX9xYk0wC0qNrsf+o0cI0YyJhEpnqK9nLEFyzY7jqY5JX+cMIqXZ+R8xDlhQ5o"
+  crossorigin="anonymous"></script>
+
+</body>
 </html>
