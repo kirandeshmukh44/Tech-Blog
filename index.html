@@ -1,80 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Tech Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-    crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Tech Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+      background-color: #6db6ff;
+      color: #343a40;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      font-size: 1rem;
+      overflow-x: hidden;
+        
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      padding: 80px 0;
+      animation: fadeUp 1.2s ease-in-out;
+    }
+
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    .btn-scroll {
+      margin-top: 20px;
+    }
+  </style>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
 
-<!-- 🔹 Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <img src="assets/logo.jpg" alt="logo" class="navbar-brand" style="width: 60px; height: 60px; border-radius: 50%;">
-    <a class="navbar-brand" href="#">My Tech Blog</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-            Languages
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">C</a></li>
-            <li><a class="dropdown-item" href="#">C++</a></li>
-            <li><a class="dropdown-item" href="#">Java</a></li>
-            <li><a class="dropdown-item" href="#">HTML</a></li>
-            <li><a class="dropdown-item" href="#">CSS</a></li>
-            <li><a class="dropdown-item" href="#">JavaScript</a></li>
-            <li><a class="dropdown-item" href="#">Python</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Tech Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#languages" role="button" data-bs-toggle="dropdown">Languages</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#c">C</a></li>
+              <li><a class="dropdown-item" href="#cpp">C++</a></li>
+              <li><a class="dropdown-item" href="#java">Java</a></li>
+              <li><a class="dropdown-item" href="#html">HTML</a></li>
+              <li><a class="dropdown-item" href="#css">CSS</a></li>
+              <li><a class="dropdown-item" href="#js">JavaScript</a></li>
+              <li><a class="dropdown-item" href="#python">Python</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- 🔹 Home Section -->
-<section id="home" class="bg-light text-center py-5" style="margin-top: 70px;">
-  <div class="container">
-    <h1 class="display-4">Welcome to My Tech Blog</h1>
-    <p class="lead">Explore tutorials and concepts from basic to advanced.</p>
-    <a href="#about" class="btn btn-primary mt-3">Know More About This Website</a>
-  </div>
-</section>
+  <section id="home" class="bg-light text-center" style="margin-top: 70px;">
+    <div class="container">
+      <h1 class="display-4">Welcome to My Tech Blog</h1>
+      <p class="lead">
+        This blog is specially designed for students, beginners, and tech enthusiasts who want to learn programming in a simple and practical way.
+        Here you’ll find basic to advanced tutorials, mini project ideas, and coding tips to enhance your skills.
+      </p>
+      <img src="assets/tech image.jpg" alt="Tech Image" class="img-fluid mb-4" style="width: 20cm; height: 10cm;">
+      <p class="lead">Explore tutorials and concepts from basic to advanced.</p>
+    </div>
+  </section>
 
-<!-- 🔹 About Section (Website Info) -->
-<section id="about" class="py-5 bg-white">
+  <section id="about" class="text-center">
   <div class="container">
-    <h2 class="text-center mb-4">About This Website</h2>
-    <p class="text-center">
-      This website is designed for students and beginners who want to learn programming in an easy and practical way.
-      It covers core concepts of languages like C, C++, Java, and HTML through real-life project examples.
-      Whether you're preparing for your diploma projects or starting your coding journey, this platform provides simple explanations, ready-to-use code snippets, and helpful tutorials to boost your learning.
+    <h2>About This Website</h2>
+    <p>
+      This website is specially created for diploma students, beginners, and tech learners who want to understand programming in a simple, easy, and practical way. 
+      The blog includes step-by-step tutorials, mini project ideas, coding explanations, and notes for various languages like C, C++, Java, HTML, CSS, and Python.
+      <br><br>
+      Whether you're just getting started or preparing for academic projects, this site will guide you through the essential programming concepts and help you build real coding confidence.
     </p>
   </div>
 </section>
 
-<!-- 🔹 Bootstrap JS -->
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C5qX9xYk0wC0qNrsf+o0cI0YyJhEpnqK9nLEFyzY7jqY5JX+cMIqXZ+R8xDlhQ5o"
-  crossorigin="anonymous"></script>
+  <section id="features" class="bg-light text-center">
+  <div class="container">
+    <h2>Features</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Beginner-Friendly</h5>
+        <p>Content is written in simple language, perfect for students and freshers.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Multi-Language Tutorials</h5>
+        <p>Learn C, C++, Java, HTML, CSS, JavaScript, and Python – all in one place.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Project Ideas</h5>
+        <p>Mini projects and assignment-based ideas for diploma-level students.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Responsive Design</h5>
+        <p>Website layout works smoothly on mobile, tablet, and desktop screens.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Free Learning</h5>
+        <p>All tutorials and guides are completely free for students to access and use.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Updated Content</h5>
+        <p>New topics and improvements are added regularly based on student needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="services" class="text-center">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Programming Tutorials</h5>
+        <p>Step-by-step tutorials in C, C++, Java, HTML, CSS, JS, and Python.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Mini Project Guidance</h5>
+        <p>Ideas and help for diploma-level and beginner-level academic projects.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Concept Explanations</h5>
+        <p>Clear and practical explanations of basic to advanced coding concepts.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Notes & References</h5>
+        <p>Well-organized notes to help you during study or exam preparation.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Code Examples</h5>
+        <p>Simple code snippets and full program examples for quick learning.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Student Support</h5>
+        <p>Support through comment sections or contact for your queries and doubts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cprogramming" class="bg-light text-center">
+  <div class="container">
+    <h2>C Programming</h2>
+
+    <p class="lead">
+      C is a powerful general-purpose programming language used in system programming, embedded systems, and low-level applications.
+      It is the foundation for many modern languages and is known for its speed and control.
+    </p>
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <h5>Simple Syntax</h5>
+        <p>Easy to learn, suitable for beginners with a minimal set of rules.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Fast & Efficient</h5>
+        <p>Great performance for system-level programming and embedded systems.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Strong Fundamentals</h5>
+        <p>Teaches core concepts like memory, loops, and control structures.</p>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <h4>Example Code</h4>
+      <pre class="bg-dark text-white text-start p-3 rounded">
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+      </pre>
+    </div>
+
+    <div class="mt-5">
+      <h4>Practice Questions</h4>
+      <ul class="list-unstyled">
+        <li>• Write a program to check if a number is even or odd.</li>
+        <li>• Write a program to print factorial of a number.</li>
+        <li>• Create a program for a simple calculator.</li>
+        <li>• Display Fibonacci series up to N terms.</li>
+        <li>• Find the largest and smallest number from an array.</li>
+      </ul>
+    </div>
+
+    <div class="mt-5">
+      <h4>Mini Project Ideas</h4>
+      <ul class="list-unstyled">
+        <li>• Guess the Number Game</li>
+        <li>• Student Record Management</li>
+        <li>• Library Management System</li>
+        <li>• Bank Account System</li>
+        <li>• Simple Quiz Game</li>
+      </ul>
+    </div>
+
+    <div class="mt-4">
+      <a href="#" class="btn btn-primary">Download C Notes (PDF)</a>
+    </div>
+  </div>
+</section>
+
+
+ <section id="cpp" class="text-center">
+  <div class="container">
+    <h2>C++ Programming</h2>
+    <p class="lead">C++ is an extension of C with Object-Oriented Programming (OOP) features, used in software development, games, and large-scale systems.</p>
+    
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <h5>Object-Oriented</h5>
+        <p>Supports classes, inheritance, and polymorphism.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Efficient</h5>
+        <p>Close to hardware but easier than C for larger programs.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Widely Used</h5>
+        <p>Used in game engines, simulations, and systems programming.</p>
+      </div>
+    </div>
+
+    <h4 class="mt-5">Example Code</h4>
+    <pre class="bg-dark text-white p-3 rounded" style="align-items: center; text-align: left;">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello, C++!";
+    return 0;
+}</pre>
+
+    <h4 class="mt-4">Mini Projects</h4>
+    <ul class="list-unstyled">
+      <li>• Electric Bill Management System</li>
+      <li>• Library Management System</li>
+      <li>• ATM Interface System</li>
+    </ul>
+
+    <a href="#" class="btn btn-primary mt-3">Download C++ Notes</a>
+  </div>
+</section>
+
+
+ <section id="html" class="text-center bg-light">
+  <div class="container">
+    <h2>HTML</h2>
+    <p class="lead">HTML (HyperText Markup Language) is the foundation of all websites, used to structure content on the web.</p>
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <h5>Basic Building Block</h5>
+        <p>Defines the structure and content of web pages.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Easy to Learn</h5>
+        <p>Simple syntax, suitable for beginners in web development.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Supports Multimedia</h5>
+        <p>Embed images, videos, forms, and links easily.</p>
+      </div>
+    </div>
+
+    <h4 class="mt-5">Example Code</h4>
+    <pre class="bg-dark text-white p-3 rounded" style="align-items: center; text-align: left;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, HTML!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+    <h4 class="mt-4">Mini Projects</h4>
+    <ul class="list-unstyled">
+      <li>• Personal Portfolio Website</li>
+      <li>• Simple Resume Page</li>
+      <li>• Image Gallery</li>
+    </ul>
+
+    <a href="#" class="btn btn-primary mt-3">Download HTML Notes</a>
+  </div>
+</section>
+
+
+  <section id="css" class="text-center">
+  <div class="container">
+    <h2>CSS</h2>
+    <p class="lead">CSS (Cascading Style Sheets) is used to style and design the layout of web pages.</p>
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <h5>Visual Styling</h5>
+        <p>Controls colors, fonts, margins, spacing, and layout of HTML elements.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Responsive Design</h5>
+        <p>Adapts web pages to different screen sizes using media queries.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Animations & Effects</h5>
+        <p>Adds transitions, hover effects, and keyframe animations to elements.</p>
+      </div>
+    </div>
+
+    <h4 class="mt-5">Example Code</h4>
+    <pre class="bg-dark text-white p-3 rounded" style="align-items:center ; text-align: left;">
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: navy;
+  text-align: center;
+}</pre>
+
+    <h4 class="mt-4">Mini Projects</h4>
+    <ul class="list-unstyled">
+      <li>• Stylish Portfolio</li>
+      <li>• Responsive Landing Page</li>
+      <li>• CSS Animated Buttons</li>
+    </ul>
+
+    <a href="#" class="btn btn-primary mt-3">Download CSS Notes</a>
+  </div>
+</section>
+
+
+  <section id="js" class="bg-light text-center">
+  <div class="container">
+    <h2>JavaScript</h2>
+    <p class="lead">JavaScript is used to make web pages interactive, dynamic, and functional.</p>
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <h5>Dynamic Behavior</h5>
+        <p>Manipulates HTML/CSS based on user actions and events.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Form Validation</h5>
+        <p>Validates user input and provides instant feedback.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Web Interactivity</h5>
+        <p>Used in sliders, popups, animations, and API handling.</p>
+      </div>
+    </div>
+
+    <h4 class="mt-5">Example Code</h4>
+    <pre class="bg-dark text-white p-3 rounded" style="align-items:center ;text-align: left;">
+document.addEventListener("DOMContentLoaded", function() {
+  alert("Hello, JavaScript!");
+});</pre>
+
+    <h4 class="mt-4">Mini Projects</h4>
+    <ul class="list-unstyled">
+      <li>• Calculator</li>
+      <li>• Quiz App</li>
+      <li>• To-Do List</li>
+    </ul>
+
+    <a href="#" class="btn btn-primary mt-3">Download JavaScript Notes</a>
+  </div>
+</section>
+
+  <section id="python" class=" text-center">
+  <div class="container">
+    <h2>Python</h2>
+    <p class="lead">Python is a beginner-friendly language widely used in AI, data science, and automation.</p>
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <h5>Simple Syntax</h5>
+        <p>Easy to write and read, perfect for beginners.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>AI & ML</h5>
+        <p>Popular choice for artificial intelligence and data science.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Wide Applications</h5>
+        <p>Used in automation, web apps, and game development.</p>
+      </div>
+    </div>
+
+    <h4 class="mt-5">Example Code</h4>
+    <pre class="bg-dark text-white p-3 rounded"style="align-items: center; text-align: left;">
+def greet():
+    print("Hello, Python!")
+
+greet()</pre>
+
+    <h4 class="mt-4">Mini Projects</h4>
+    <ul class="list-unstyled">
+      <li>• BMI Calculator</li>
+      <li>• Weather App using API</li>
+      <li>• Quiz Game</li>
+    </ul>
+
+    <a href="#" class="btn btn-primary mt-3">Download Python Notes</a>
+  </div>
+</section>
+
+
+  <section id="contact" class="bg-light text-center">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>You can reach me via email: <strong>kiran44deshmukh@gmail.com</strong></p>
+    </div>
+  </section>
 
 </body>
 </html>
